@@ -24,9 +24,10 @@ func Import(path string) {
 			if err != nil {
 				return err
 			}
-			// create a variable with the file name and content
+			// create a env variable with the file name and content
 			varName := info.Name()
 			fmt.Printf("var %s = %q\n", varName, content)
+			os.Setenv(string(varName), string(content))
 		}
 		return nil
 	})
