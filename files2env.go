@@ -28,7 +28,7 @@ func Import(path string) {
 			// create a env variable with the file name and content
 			varName := info.Name()
 			log.Println(varName + " Env Variable Created")
-			//fmt.Printf("var %s = %q\n", varName, content)
+			//fmt.Printf("var %s = %q\n", varName, content) - Can be removed
 			os.Setenv(string(varName), string(content))
 		}
 		return nil
