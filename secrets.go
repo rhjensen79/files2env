@@ -1,3 +1,8 @@
+/**
+ * Author: Robert Jensen
+ * File: secrets.go
+ */
+
 package secrets
 
 import (
