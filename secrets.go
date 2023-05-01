@@ -3,7 +3,7 @@
  * File: secrets.go
  */
 
-package secrets
+package lib
 
 import (
 	"fmt"
