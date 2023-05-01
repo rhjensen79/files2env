@@ -2,12 +2,12 @@
  * Author: Robert Jensen
  * File: init.go
  */
-package lib
+package files2env
 
 import (
 	"fmt"
 )
 
 func init() {
-	fmt.Println("[Secrets] initializing ...")
+	fmt.Println("[files2env] initializing ...")
 }
