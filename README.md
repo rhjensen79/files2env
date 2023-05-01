@@ -17,7 +17,7 @@ Usecase is Kubernetes Service Bindings, where the secrets, are attached to the c
 Run the following to get the package
 
 ```bash
-go get github.com/rhjensen79/files2env@v0.3.0
+go get github.com/rhjensen79/files2env@v0.4.0
 ```
 
 ## Usage <a name = "usage"></a>
