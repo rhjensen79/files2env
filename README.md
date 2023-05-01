@@ -5,16 +5,19 @@
 - [About](#about)
 - [Installing](#installing)
 - [Usage](#usage)
+- [Collaboration](#collaboration)
 
 ## About <a name = "about"></a>
 
-Golang module, that imports all files in a folder, and assigns the name and value, as env variables.
+Golang module, that imports all files in a folder, and assigns the names and value, as env variables.
 
 Usecase is Kubernetes Service Bindings, where the secrets, are attached to the container, as files.
 
+This allows you to easy extract the secrets, and map them as env variables, to be used in your code.
+
 ## Installing
 
-Run the following to get the package
+Run the following to install the package
 
 ```bash
 go get github.com/rhjensen79/files2env@v0.4.0
@@ -35,3 +38,7 @@ func main() {
  files2env.Import("./secrets")
 }
 ```
+
+## Collaboration
+
+If you find issues, then feel free to create and issue, or help with making the code better.
