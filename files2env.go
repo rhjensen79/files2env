@@ -8,6 +8,7 @@ package files2env
 import (
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 	"path/filepath"
 )
@@ -26,7 +27,8 @@ func Import(path string) {
 			}
 			// create a env variable with the file name and content
 			varName := info.Name()
-			fmt.Printf("var %s = %q\n", varName, content)
+			log.Println(varName + " Env Variable Created")
+			//fmt.Printf("var %s = %q\n", varName, content)
 			os.Setenv(string(varName), string(content))
 		}
 		return nil
