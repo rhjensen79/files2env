@@ -1,6 +1,6 @@
 /**
  * Author: Robert Jensen
- * File: secrets.go
+ * File: files2env.go
  */
 
 package files2env
