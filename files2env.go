@@ -17,7 +17,8 @@ func Import(path string) {
 	// walk through the directory and read each file
 	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
-			return err
+			log.Println("Directory does not exist - exiting")
+			os.Exit(1)
 		}
 		if !info.IsDir() {
 			// read the file content
