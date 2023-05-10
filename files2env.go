@@ -18,6 +18,7 @@ func Import(path string) {
 	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			log.Println("Directory does not exist")
+			return err
 		}
 		if !info.IsDir() {
 			// read the file content

@@ -20,7 +20,7 @@ This allows you to easy extract the secrets, and map them as env variables, to b
 Run the following to install the package
 
 ```bash
-go get github.com/rhjensen79/files2env@v0.7.6
+go get github.com/rhjensen79/files2env@v0.7.7
 ```
 
 ## Usage <a name = "usage"></a>
